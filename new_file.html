@@ -15,7 +15,7 @@
 				<img src=".\img\顶部1.png" style="width: 100%;height: 90%;">
 			</div>
 			<div id="content"  style="background-color: #f6f6f6;border-radius: 5%; height: 100%;width: 100%;">
-				<a style="font-size:45px;">商家地址：</a><a style="font-size:45px;" id="nane_phone"></a><a style="font-size:45px;color: #5500ff;" href="">复制</a><br />
+				<a style="font-size:45px;">商家地址：</a><a style="font-size:45px;" id="nane_phone"></a><button onclick="fuzhi()" style="font-size:45px;color: #5500ff;" href="">复制</button><br />
 				<p style="font-size:45px; color: #8e8a8a;" id="detail"></p>
 			</div>
 			<div id="">
@@ -31,6 +31,13 @@
 			document.getElementById("detail").innerHTML=value2;
 			
 		};
+		function fuzhi(){
+			navigator.clipboard.writeText(" ");//赋值到剪贴版
+			let value1=document.getElementById("c-name-phone").value;
+			let value2=document.getElementById("detail_adderss").value;
+			console.log(value1+value2)
+			a=value1+value2;//两字符连接
+			navigator.clipboard.writeText(a);//赋值到剪贴版
+		}
 	</script>
 </html>
-

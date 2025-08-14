@@ -6,16 +6,16 @@
 	</head>
 	<body>
 		<div  style="display: block;">
-		<a style="font-size: 50px;">名字与电话</a><br /><input type="text" style="height: 80px;width: 100%; border:2px solid black;font-size: 40px;" type="" name="c-name-phone" id="c-name-phone" value="" />
-		<br><a style="font-size: 50px;">详细地址</a><br /><input type="text" style="height: 80px;width: 100%;border:2px solid black;font-size: 40px;" type="" name="detail_adderss" id="detail_adderss" value="" />
+		<a style="font-size: 50px;">收件人名字与电话</a><br /><input type="text" style="height: 80px;width: 100%; border:2px solid black;font-size: 40px;" type="" name="c-name-phone" id="c-name-phone" value="" />
+		<br><a style="font-size: 50px;">详细地址（省\市\区\具体地址）</a><br /><input type="text" style="height: 80px;width: 100%;border:2px solid black;font-size: 40px;" type="" name="detail_adderss" id="detail_adderss" value="" />
 		<button style="width:100px;height: 80px;font-size: 30px" onclick="getyou()"  id="queren">生成</button>
 		</div>
 		<div id="all-body">
 			<div id="top">
 				<img src=".\img\顶部1.png" style="width: 100%;height: 90%;">
 			</div>
-			<div id="content"  style="background-color: #f6f6f6;border-radius: 5%; height: 100%;width: 100%;">
-				<a style="font-size:45px;">商家地址：</a><a style="font-size:45px;" id="nane_phone"></a><button onclick="fuzhi()" style="font-size:45px;color: #5500ff;" href="">复制</button><br />
+			<div id="content"  style="word-break: break-all; background-color: #f6f6f6;border-radius: 10%; height: 100%;width: 100%">
+				<a style="font-size:45px;">商家地址：</a><a style="font-size:45px;" id="nane_phone"></a><button onclick="fuzhi()" style="font-size:45px;border:none;color: #5500ff;" href="">复制</button><br />
 				<p style="font-size:45px; color: #8e8a8a;" id="detail"></p>
 			</div>
 			<div id="">
